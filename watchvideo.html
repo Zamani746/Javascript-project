@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+     <!-- custom css file link -->
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header secction starts -->
+     <header class="header">
+
+        <section class="flex">
+
+            <a href="home.html" class="logo">Zamani's Concept</a>
+
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses..." required maxlength="100">
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+            <div class="profile">
+                <img src="/images/pic1.jpg" alt="My Picture">
+                <h3>Umenduka Chinonso</h3>
+                <span>Student</span>
+                <a href="profile.html" class="btn">View Profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">Login</a>
+                    <a href="register.html" class="option-btn">register</a>
+                </div>
+            </div>
+
+        </section>
+     </header>
+
+
+    <!-- header sections ends -->
+
+    <!-- sidebar section starts -->
+
+    <div class="side-bar">
+
+    <div class="close-side-bar">
+        <i class="fas fa-times"></i>
+    </div>
+
+      <div class="profile">
+        <img src="/images/picnav.jpg" alt="My Picture">
+        <h3>Umenduka Chinonso</h3>
+         <span>Student</span>
+         <a href="profile.html" class="btn">View Profile</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>About us</span></a>
+            <a href="course2.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Tutors</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+        </nav>
+ </div>
+
+
+    </div>
+
+
+    <!-- sidebar section ends -->
+
+
+<!-- watch video section starts -->
+
+<section class="watch-video">
+
+<div class="video-details">
+    <video src="images/video1.avif" class="video" poster="images/video1.avif" controls autoplay></video>
+    <h3 class="title">Complete HTML Tutorial (part 01)</h3>
+    <div class="info">
+        <p><i class="fas fa-calendar"></i><span>21-25-2022</span></p>
+        <p><i class="fas fa-heart"></i><span>45 likes</span></p>
+    </div>
+    <div class="tutor">
+        <img src="images/pic1.jpg" alt="">
+        <div>
+            <h3>Zamani</h3>
+            <span>Developer</span>
+        </div>
+    </div>
+    <form action="" method="post" class="flex">
+        <a href="playlist.html" class="btn">View Playlist</a>
+        <button type="submit"><i class="far fa-heart"></i></button>
+    </form>
+    <div class="descriptions">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut facere reiciendis commodi veritatis nihil quam modi. Quo soluta omnis ex corrupti repellendus iure rem? Pariatur natus quis nemo optio voluptate!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolore accusamus amet optio recusandae odit, enim quidem necessitatibus pariatur quisquam?</p>
+    </div>
+</div>
+
+</section>
+
+
+<!-- watch video section ends -->
+
+    
+
+<!-- Comment section starts -->
+
+
+<section class="comments">
+
+    <h1 class="heading">Add Comment</h1>
+
+<form action="" method="post" class="add-comment">
+    <h3>add title</h3>
+    <textarea name="comment_box" required placeholder="Write your comments..." maxlength="1000" cols="30" rows="10"></textarea>
+    <input type="submit" value="add comment" name="add_comment" class="btn">
+</form>
+
+<h1 class="heading">6 Comment</h1>
+
+<div class="show-comments">
+
+    <div class="box">
+        <div class="user">
+            <img src="images/pic1.jpg" alt="">
+            <div>
+                <h3>Francis Chinedu</h3>
+                <span>21-25-2022</span>
+            </div>
+        </div>
+        <p class="comment">This is a comment from Francis Chinedu</p>
+        <form action="" method="post" class="btn">
+         <button type="submit" name="edit_comment" class="inline-option-btn">Edit commet</button>
+         <button type="submit" name="delete_comment" class="inline-delete-btn">Delete commet</button>
+        </form>
+    </div>
+
+    <div class="box">
+        <div class="user">
+             <img src="images/pic1.jpg" alt="">
+            <div>
+                <h3>Michael Nnaemeka</h3>
+                <span>21-25-2022</span>
+            </div>
+        </div>
+        <p class="text">Wow Amazing Video!
+            Thanks for the source code! 
+        </p>
+    </div>
+
+
+
+
+</div>
+
+</section>
+
+<!-- Comment section ends -->
+
+
+
+
+
+
+<!-- Footer section starts -->
+
+<footer class="footer">
+
+&copy; copyright @ 2025  by <span>Zamani</span> | all rights reserved.
+
+</footer>
+
+<!-- Footer section ends -->
+
+
+    <!-- custom js file link -->
+     <script src="/js/script.js"></script>
+</body>
+</html>
