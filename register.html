@@ -44,7 +44,6 @@
         </section>
      </header>
 
-
     <!-- header sections ends -->
 
     <!-- sidebar section starts -->
@@ -71,51 +70,38 @@
         </nav>
  </div>
 
-
-    </div>
-
-
     <!-- sidebar section ends -->
-
-
-
-    
 
     <!-- register section starts -->
 
-
     <section class="form-container">
 
-        <form action="" method="post" enctype="multipart/form-data">
+        <!-- Notification Area -->
+        <div id="notification" class="notification">
+            <i id="notification-icon"></i>
+            <span id="notification-message"></span>
+        </div>
+
+        <form id="registrationForm" enctype="multipart/form-data">
             <h3>Register New </h3>
             <p>Your Name: <span>*</span></p>
-            <input type="text" name="name" placeholder="Enter your Name" required maxlength="100" class="box">
+            <input type="text" name="name" id="name" placeholder="Enter your Name" required maxlength="100" class="box">
             <p>Your Email</p>
-            <input type="email" name="email" required placeholder="Enter Your Email" maxlength="100" class="box">
+            <input type="email" name="email" id="email" required placeholder="Enter Your Email" maxlength="100" class="box">
+            <p>Password <span>*</span></p>
+            <input type="password" name="regpass" id="regpass" placeholder="Enter your password..." maxlength="50" required class="box">
             <p>Confirm password</p>
-            <input type="password" name="regpass" placeholder="Enter your password..." maxlength="50" required class="box">
-            <input type="password" name="c_pass" placeholder="Confirm your password..." maxlength="50" required class="box">
+            <input type="password" name="c_pass" id="c_pass" placeholder="Confirm your password..." maxlength="50" required class="box">
             <p>Select Picture <span>*</span></p>
-            <input type="file" name="image" accept="image/*" required class="box">
-            <input type="submit" name="submit" value="register now" class="btn">
-
-
+            <input type="file" name="image" id="image" accept="image/*" required class="box">
+            <button type="submit" id="submitBtn" class="btn">
+                <span id="btnText">register now</span>
+            </button>
         </form>
 
     </section>
 
-
-
-
-
-
-
     <!-- register sectin ends -->
-
-
-
-
-
 
 <!-- Footer section starts -->
 
@@ -127,8 +113,5 @@
 
 <!-- Footer section ends -->
 
-
     <!-- custom js file link -->
      <script src="/js/script.js"></script>
-</body>
-</html>
